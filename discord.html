@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url(bg2.jpeg);
+            color: white;
+            background-size: cover;
+
+        }
+
+        .container {
+            margin-top: 50px;
+    
+        }
+
+        .discord-container {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .size {
+            margin-right: 300px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            border-radius: 5px;
+            width: 100%;
+            background-color: #404040;
+            color: white;
+            border: 1px solid #404040;
+        }
+
+        .btn-primary {
+            background-color: #4E5D94;
+            border-radius: 5px;
+        }
+
+        .btn-primary:hover {
+            background-color: #5F709F;
+        }
+
+        .qr-code {
+             margin-top: -60px;
+             width: 230px;
+             height: auto;
+
+
+        }
+
+        .qr-code-container {
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .sized4div {
+            width: 1000px;
+            height: 550px;
+        }
+
+        .margin {
+            margin-bottom: 10px;
+        }
+
+        .scan {
+            margin-bottom: -10px;
+        }
+
+        .button {
+      background-color: #5865F2;
+      color: white;
+      padding: 9px 204px;
+      font-size: 18px;
+      cursor: pointer;
+    
+        }
+
+        .text {
+      color: #72767d;
+      font-size: 14px;
+      text-align: left;
+      margin-top: 20px;
+
+        .starlabel-label:after {
+  content:"*";
+  color: red;
+}
+        .po {
+            margin-bottom: 500px;
+        }
+
+    </style>
+</head>
+<body>
+    
+<!--INTRO/DIVS TO ENHANCE IT-->
+    <div class="container-fluid container">
+    <div class="row justify-content-center">
+    <div class="col-md-9 mx-auto">
+    <div class="discord-container sized4div">
+        <h2 class="text-center mb-4 size">Welcome back!</h2>
+        <h3 class="text-center size po">We're so excited to see you again!</h3>
+
+<!--BUTTONS-->
+    <form>
+    <div class="row mt-4">
+    <div class="col-md-6">
+    <div class="form-group">
+        <label for="email" class="form-label starlabel-label">Email Address or Phone Number</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+</div>
+    <div class="form-group">
+        <label for="password" class="form-label starlabel-label">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password" required >
+        <div class="text">
+          <a href="#">Forgot your password?</a>
+        </div>
+        <br>
+        <button class="button">Log In</button>
+        <div class="text small">
+        Need an account? <a href="#">Register</a>
+      </div>
+
+    </form>
+</div>
+</div>
+
+<!--QR CODE-->
+    <div class="col-md-6 align-middle">
+    <div class="qr-code-container">
+        <img src="qr.png" alt="QR Code" class="margin qr-code">
+        <br><br>
+        <h4 class="mb-4">Log in with QR Code</h4>
+        <p class="mb-4">Scan this with the Discord mobile app to log in instantly.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
